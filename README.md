@@ -43,3 +43,7 @@ r := gin.Default()
 ## Connecting to a database
 
 ## The user model
+
+## Login
+
+when import jwt package, remember to use v4 package.
