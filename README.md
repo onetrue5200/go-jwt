@@ -39,3 +39,5 @@ r := gin.Default()
 	})
 	r.Run()  // try load port from os.Getenv("PORT")
 ```
+
+## Connecting to a database
