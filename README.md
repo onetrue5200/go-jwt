@@ -13,3 +13,29 @@
 go install github.com/githubnemo/CompileDaemon
 compiledaemon --command="./go-jwt"
 ```
+
+## Dotenv setup
+Add your application configuration to your .env file in the root of your project:
+```
+PORT=3000
+```
+Then in your Go app you can do something like
+```
+err := godotenv.Load()
+if err != nil {
+log.Fatal("Error loading .env file")
+}
+
+port := os.Getenv("PORT")
+```
+
+## Gin setup
+```
+r := gin.Default()
+	r.GET("/ping", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+	r.Run()  // try load port from os.Getenv("PORT")
+```
