@@ -41,3 +41,5 @@ r := gin.Default()
 ```
 
 ## Connecting to a database
+
+## The user model
