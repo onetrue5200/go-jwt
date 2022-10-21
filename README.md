@@ -47,3 +47,5 @@ r := gin.Default()
 ## Login
 
 when import jwt package, remember to use v4 package.
+
+## Auth Middleware
